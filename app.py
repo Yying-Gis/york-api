@@ -4,7 +4,7 @@ from sqlalchemy import create_engine, text
 import os
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://yying-gis.github.io"])
 
 # 讀取 Render 環境變數
 DATABASE_URL = os.environ.get("DATABASE_URL")
